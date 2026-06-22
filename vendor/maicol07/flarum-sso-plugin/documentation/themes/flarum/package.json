@@ -1,0 +1,32 @@
+{
+    "name": "sami-theme-flarum",
+    "scripts": {
+        "build": "webpack --mode production",
+        "watch": "webpack --mode development --watch"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.26.0",
+        "@babel/preset-react": "^7.25.9",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "duplicate-package-checker-webpack-plugin": "^3.0.0",
+        "file-loader": "^6.2.0",
+        "image-webpack-loader": "^8.1.0",
+        "less": "^4.2.1",
+        "less-loader": "^12.2.0",
+        "mini-css-extract-plugin": "^2.9.2",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
+        "optimize-js-plugin": "0.0.4",
+        "postcss-loader": "^8.1.1",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.96.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "jquery": "^3.7.1"
+    }
+}

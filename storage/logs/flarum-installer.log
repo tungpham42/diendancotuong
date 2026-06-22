@@ -1,0 +1,15 @@
+[2026-06-22 03:43:53] Flarum Installer.ERROR: Symfony\Component\Console\Exception\NamespaceNotFoundException: There are no commands defined in the "optimize" namespace. in /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php:650
+Stack trace:
+#0 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php(701): Symfony\Component\Console\Application->findNamespace('optimize')
+#1 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find('optimize:clear')
+#2 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php(171): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/flarum/core/src/Console/Server.php(42): Symfony\Component\Console\Application->run()
+#4 /Users/tungpham/Documents/GitHub/diendancotuong/flarum(24): Flarum\Console\Server->listen()
+#5 {main}  
+[2026-06-22 03:44:03] Flarum Installer.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "serve" is not defined. in /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php:720
+Stack trace:
+#0 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find('serve')
+#1 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/symfony/console/Application.php(171): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/tungpham/Documents/GitHub/diendancotuong/vendor/flarum/core/src/Console/Server.php(42): Symfony\Component\Console\Application->run()
+#3 /Users/tungpham/Documents/GitHub/diendancotuong/flarum(24): Flarum\Console\Server->listen()
+#4 {main}  
