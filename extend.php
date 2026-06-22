@@ -8,7 +8,17 @@
  */
 
 use Flarum\Extend;
+use Flarum\Tags\Event\Saving;
+use Illuminate\Support\Str;
 
 return [
-    // Register extenders here to customize your forum!
+    (new Extend\Event())
+        ->listen(Saving::class, function (Saving $event) {
+            $attributes = $event->data['attributes'] ?? [];
+
+            // If the tag name is being created or changed, automatically force a perfect transliterated slug
+            if (isset($attributes['name'])) {
+                $event->tag->slug = Str::slug($attributes['name']);
+            }
+        })
 ];
